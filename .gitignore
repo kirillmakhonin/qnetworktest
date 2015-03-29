@@ -1,0 +1,12 @@
+﻿
+Debug
+Release
+GeneratedFiles
+ipch
+Win32
+*.suo
+*.sdf
+*.opensdf
+*.pro.user
+*.vcxproj.user
+build-*
