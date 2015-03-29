@@ -26,7 +26,7 @@ void RealSerialPorts::recieveData(int moxaPortNumber, QString data){
 	if (!m_serialPortAssociations.contains(moxaPortNumber))
 		return;
 
-	m_serialPortAssociations[moxaPortNumber]->write((data + "\n\r").toStdString().c_str());
+	m_serialPortAssociations[moxaPortNumber]->write((data + "\r\n").toStdString().c_str());
 	m_serialPortAssociations[moxaPortNumber]->flush();
 }
 
